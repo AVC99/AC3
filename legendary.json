@@ -1,0 +1,774 @@
+[
+  {
+    "id": 144,
+    "name": "Articuno",
+    "description": "A legendary bird Pokémon. It freezes water that is contained in winter air and makes it snow.",
+    "height": 17,
+    "weight": 554,
+    "captureRate": 3,
+    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/144.png",
+    "types": [
+      "ice",
+      "flying"
+    ],
+    "power": 580
+  },
+  {
+    "id": 145,
+    "name": "Zapdos",
+    "description": "This legendary bird Pokémon is said to appear when the sky turns dark and lightning showers down.",
+    "height": 16,
+    "weight": 526,
+    "captureRate": 3,
+    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/145.png",
+    "types": [
+      "electric",
+      "flying"
+    ],
+    "power": 580
+  },
+  {
+    "id": 146,
+    "name": "Moltres",
+    "description": "A legendary bird Pokémon. As it flaps its flaming wings, even the night sky will turn red.",
+    "height": 20,
+    "weight": 600,
+    "captureRate": 3,
+    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/146.png",
+    "types": [
+      "fire",
+      "flying"
+    ],
+    "power": 580
+  },
+  {
+    "id": 150,
+    "name": "Mewtwo",
+    "description": "Psychic power has augmented its muscles. It has a grip strength of one ton and can sprint a hundred meters in two seconds flat!",
+    "height": 20,
+    "weight": 1220,
+    "captureRate": 3,
+    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/150.png",
+    "types": [
+      "psychic"
+    ],
+    "power": 680
+  },
+  {
+    "id": 243,
+    "name": "Raikou",
+    "description": "Raikou embodies the speed of lightning. The roars of this Pokémon send shock waves shuddering through the air and shake the ground as if lightning bolts had come crashing down.",
+    "height": 19,
+    "weight": 1780,
+    "captureRate": 3,
+    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/243.png",
+    "types": [
+      "electric"
+    ],
+    "power": 580
+  },
+  {
+    "id": 244,
+    "name": "Entei",
+    "description": "Entei embodies the passion of magma. This Pokémon is thought to have been born in the eruption of a volcano. It sends up massive bursts of fire that utterly consume all that they touch.",
+    "height": 21,
+    "weight": 1980,
+    "captureRate": 3,
+    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/244.png",
+    "types": [
+      "fire"
+    ],
+    "power": 580
+  },
+  {
+    "id": 245,
+    "name": "Suicune",
+    "description": "Suicune embodies the compassion of a pure spring of water. It runs across the land with gracefulness. This Pokémon has the power to purify dirty water.",
+    "height": 20,
+    "weight": 1870,
+    "captureRate": 3,
+    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/245.png",
+    "types": [
+      "water"
+    ],
+    "power": 580
+  },
+  {
+    "id": 249,
+    "name": "Lugia",
+    "description": "Lugia’s wings pack devastating power—a light fluttering of its wings can blow apart regular houses. As a result, this Pokémon chooses to live out of sight deep under the sea.",
+    "height": 52,
+    "weight": 2160,
+    "captureRate": 3,
+    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/249.png",
+    "types": [
+      "psychic",
+      "flying"
+    ],
+    "power": 680
+  },
+  {
+    "id": 250,
+    "name": "Ho-Oh",
+    "description": "Ho-Oh’s feathers glow in seven colors depending on the angle at which they are struck by light. These feathers are said to bring happiness to the bearers. This Pokémon is said to live at the foot of a rainbow.",
+    "height": 38,
+    "weight": 1990,
+    "captureRate": 3,
+    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/250.png",
+    "types": [
+      "fire",
+      "flying"
+    ],
+    "power": 680
+  },
+  {
+    "id": 377,
+    "name": "Regirock",
+    "description": "Regirock’s body is composed entirely of rocks. Recently, a study made the startling discovery that the rocks were all unearthed from different locations.",
+    "height": 17,
+    "weight": 2300,
+    "captureRate": 3,
+    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/377.png",
+    "types": [
+      "rock"
+    ],
+    "power": 580
+  },
+  {
+    "id": 378,
+    "name": "Regice",
+    "description": "Regice cloaks itself with frigid air of -328 degrees Fahrenheit. Things will freeze solid just by going near this Pokémon. Its icy body is so cold, it will not melt even if it is immersed in magma.",
+    "height": 18,
+    "weight": 1750,
+    "captureRate": 3,
+    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/378.png",
+    "types": [
+      "ice"
+    ],
+    "power": 580
+  },
+  {
+    "id": 379,
+    "name": "Registeel",
+    "description": "Registeel was imprisoned by people in ancient times. The metal composing its body is thought to be a curious substance that is not of this earth.",
+    "height": 19,
+    "weight": 2050,
+    "captureRate": 3,
+    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/379.png",
+    "types": [
+      "steel"
+    ],
+    "power": 580
+  },
+  {
+    "id": 380,
+    "name": "Latias",
+    "description": "Latias is highly intelligent and capable of understanding human speech. It is covered with a glass-like down. The Pokémon enfolds its body with its down and refracts light to alter its appearance.",
+    "height": 14,
+    "weight": 400,
+    "captureRate": 3,
+    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/380.png",
+    "types": [
+      "dragon",
+      "psychic"
+    ],
+    "power": 600
+  },
+  {
+    "id": 381,
+    "name": "Latios",
+    "description": "Latios will only open its heart to a Trainer with a compassionate spirit. This Pokémon can fly faster than a jet plane by folding its forelegs to minimize air resistance.",
+    "height": 20,
+    "weight": 600,
+    "captureRate": 3,
+    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/381.png",
+    "types": [
+      "dragon",
+      "psychic"
+    ],
+    "power": 600
+  },
+  {
+    "id": 382,
+    "name": "Kyogre",
+    "description": "Kyogre is said to be the personification of the sea itself. Legends tell of its many clashes against Groudon, as each sought to gain the power of nature.",
+    "height": 45,
+    "weight": 3520,
+    "captureRate": 3,
+    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/382.png",
+    "types": [
+      "water"
+    ],
+    "power": 670
+  },
+  {
+    "id": 383,
+    "name": "Groudon",
+    "description": "Through Primal Reversion and with nature’s full power, it will take back its true form. It can cause magma to erupt and expand the landmass of the world.",
+    "height": 35,
+    "weight": 9500,
+    "captureRate": 3,
+    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/383.png",
+    "types": [
+      "ground"
+    ],
+    "power": 670
+  },
+  {
+    "id": 384,
+    "name": "Rayquaza",
+    "description": "It flies forever through the ozone layer, consuming meteoroids for sustenance. The many meteoroids in its body provide the energy it needs to Mega Evolve.",
+    "height": 70,
+    "weight": 2065,
+    "captureRate": 45,
+    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/384.png",
+    "types": [
+      "dragon",
+      "flying"
+    ],
+    "power": 680
+  },
+  {
+    "id": 480,
+    "name": "Uxie",
+    "description": "It is said that its emergence gave humans the intelligence to improve their quality of life.",
+    "height": 3,
+    "weight": 3,
+    "captureRate": 3,
+    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/480.png",
+    "types": [
+      "psychic"
+    ],
+    "power": 580
+  },
+  {
+    "id": 481,
+    "name": "Mesprit",
+    "description": "It sleeps at the bottom of a lake. Its spirit is said to leave its body to fly on the lake’s surface.",
+    "height": 3,
+    "weight": 3,
+    "captureRate": 3,
+    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/481.png",
+    "types": [
+      "psychic"
+    ],
+    "power": 580
+  },
+  {
+    "id": 482,
+    "name": "Azelf",
+    "description": "It is thought that Uxie, Mesprit, and Azelf all came from the same egg.",
+    "height": 3,
+    "weight": 3,
+    "captureRate": 3,
+    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/482.png",
+    "types": [
+      "psychic"
+    ],
+    "power": 580
+  },
+  {
+    "id": 483,
+    "name": "Dialga",
+    "description": "It has the power to control time. It appears in Sinnoh-region myths as an ancient deity.",
+    "height": 54,
+    "weight": 6830,
+    "captureRate": 3,
+    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/483.png",
+    "types": [
+      "steel",
+      "dragon"
+    ],
+    "power": 680
+  },
+  {
+    "id": 484,
+    "name": "Palkia",
+    "description": "It has the ability to distort space. It is described as a deity in Sinnoh-region mythology.",
+    "height": 42,
+    "weight": 3360,
+    "captureRate": 3,
+    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/484.png",
+    "types": [
+      "water",
+      "dragon"
+    ],
+    "power": 680
+  },
+  {
+    "id": 485,
+    "name": "Heatran",
+    "description": "Boiling blood, like magma, circulates through its body. It makes its dwelling place in volcanic caves.",
+    "height": 17,
+    "weight": 4300,
+    "captureRate": 3,
+    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/485.png",
+    "types": [
+      "fire",
+      "steel"
+    ],
+    "power": 600
+  },
+  {
+    "id": 486,
+    "name": "Regigigas",
+    "description": "There is an enduring legend that states this Pokémon towed continents with ropes.",
+    "height": 37,
+    "weight": 4200,
+    "captureRate": 3,
+    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/486.png",
+    "types": [
+      "normal"
+    ],
+    "power": 670
+  },
+  {
+    "id": 487,
+    "name": "Giratina",
+    "description": "It was banished for its violence. It silently gazed upon the old world from the Distortion World.",
+    "height": 45,
+    "weight": 7500,
+    "captureRate": 3,
+    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/487.png",
+    "types": [
+      "ghost",
+      "dragon"
+    ],
+    "power": 680
+  },
+  {
+    "id": 488,
+    "name": "Cresselia",
+    "description": "Those who sleep holding Cresselia’s feather are assured of joyful dreams. It is said to represent the crescent moon.",
+    "height": 15,
+    "weight": 856,
+    "captureRate": 3,
+    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/488.png",
+    "types": [
+      "psychic"
+    ],
+    "power": 600
+  },
+  {
+    "id": 638,
+    "name": "Cobalion",
+    "description": "It has a body and heart of steel. It worked with its allies to punish people when they hurt Pokémon.",
+    "height": 21,
+    "weight": 2500,
+    "captureRate": 3,
+    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/638.png",
+    "types": [
+      "steel",
+      "fighting"
+    ],
+    "power": 580
+  },
+  {
+    "id": 639,
+    "name": "Terrakion",
+    "description": "Spoken of in legend, this Pokémon used its phenomenal power to destroy a castle in its effort to protect Pokémon.",
+    "height": 19,
+    "weight": 2600,
+    "captureRate": 3,
+    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/639.png",
+    "types": [
+      "rock",
+      "fighting"
+    ],
+    "power": 580
+  },
+  {
+    "id": 640,
+    "name": "Virizion",
+    "description": "Legends say this Pokémon confounded opponents with its swift movements.",
+    "height": 20,
+    "weight": 2000,
+    "captureRate": 3,
+    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/640.png",
+    "types": [
+      "grass",
+      "fighting"
+    ],
+    "power": 580
+  },
+  {
+    "id": 641,
+    "name": "Tornadus",
+    "description": "Tornadus expels massive energy from its tail, causing severe storms. Its power is great enough to blow houses away.",
+    "height": 15,
+    "weight": 630,
+    "captureRate": 3,
+    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/641.png",
+    "types": [
+      "flying"
+    ],
+    "power": 580
+  },
+  {
+    "id": 642,
+    "name": "Thundurus",
+    "description": "As it flies around, it shoots lightning all over the place and causes forest fires. It is therefore disliked.",
+    "height": 15,
+    "weight": 610,
+    "captureRate": 3,
+    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/642.png",
+    "types": [
+      "electric",
+      "flying"
+    ],
+    "power": 580
+  },
+  {
+    "id": 643,
+    "name": "Reshiram",
+    "description": "According to myth, if people ignore truth and let themselves become consumed by greed, Reshiram will arrive to burn their kingdoms down.",
+    "height": 32,
+    "weight": 3300,
+    "captureRate": 3,
+    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/643.png",
+    "types": [
+      "dragon",
+      "fire"
+    ],
+    "power": 680
+  },
+  {
+    "id": 644,
+    "name": "Zekrom",
+    "description": "Mythology tells us that if people lose the righteousness in their hearts, their kingdoms will be razed by Zekrom’s lightning.",
+    "height": 29,
+    "weight": 3450,
+    "captureRate": 3,
+    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/644.png",
+    "types": [
+      "dragon",
+      "electric"
+    ],
+    "power": 680
+  },
+  {
+    "id": 645,
+    "name": "Landorus",
+    "description": "From the forces of lightning and wind, it creates energy to give nutrients to the soil and make the land abundant.",
+    "height": 15,
+    "weight": 680,
+    "captureRate": 3,
+    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/645.png",
+    "types": [
+      "ground",
+      "flying"
+    ],
+    "power": 600
+  },
+  {
+    "id": 646,
+    "name": "Kyurem",
+    "description": "The sameness of Zekrom’s and Kyurem’s genes allowed Kyurem to absorb Zekrom. Kyurem can now use the power of both electricity and ice.",
+    "height": 30,
+    "weight": 3250,
+    "captureRate": 3,
+    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/646.png",
+    "types": [
+      "dragon",
+      "ice"
+    ],
+    "power": 660
+  },
+  {
+    "id": 716,
+    "name": "Xerneas",
+    "description": "When the horns on its head shine in seven colors, it is said to be sharing everlasting life.",
+    "height": 30,
+    "weight": 2150,
+    "captureRate": 45,
+    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/716.png",
+    "types": [
+      "fairy"
+    ],
+    "power": 680
+  },
+  {
+    "id": 717,
+    "name": "Yveltal",
+    "description": "When its life comes to an end, it absorbs the life energy of every living thing and turns into a cocoon once more.",
+    "height": 58,
+    "weight": 2030,
+    "captureRate": 45,
+    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/717.png",
+    "types": [
+      "dark",
+      "flying"
+    ],
+    "power": 680
+  },
+  {
+    "id": 718,
+    "name": "Zygarde",
+    "description": "Some say it can change to an even more powerful form when battling those who threaten the ecosystem.",
+    "height": 50,
+    "weight": 3050,
+    "captureRate": 3,
+    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/718.png",
+    "types": [
+      "dragon",
+      "ground"
+    ],
+    "power": 600
+  },
+  {
+    "id": 785,
+    "name": "Tapu Koko",
+    "description": "The lightning-wielding guardian deity of Melemele, Tapu Koko is brimming with curiosity and appears before people from time to time.",
+    "height": 18,
+    "weight": 205,
+    "captureRate": 3,
+    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/785.png",
+    "types": [
+      "electric",
+      "fairy"
+    ],
+    "power": 570
+  },
+  {
+    "id": 786,
+    "name": "Tapu Lele",
+    "description": "Although called a guardian deity, Tapu Lele is devoid of guilt about its cruel disposition and can be described as nature incarnate.",
+    "height": 12,
+    "weight": 186,
+    "captureRate": 3,
+    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/786.png",
+    "types": [
+      "psychic",
+      "fairy"
+    ],
+    "power": 570
+  },
+  {
+    "id": 787,
+    "name": "Tapu Bulu",
+    "description": "It makes ringing sounds with its tail to let others know where it is, avoiding unneeded conflicts. This guardian deity of Ula’ula controls plants.",
+    "height": 19,
+    "weight": 455,
+    "captureRate": 3,
+    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/787.png",
+    "types": [
+      "grass",
+      "fairy"
+    ],
+    "power": 570
+  },
+  {
+    "id": 788,
+    "name": "Tapu Fini",
+    "description": "Although it’s called a guardian deity, terrible calamities sometimes befall those who recklessly approach Tapu Fini.",
+    "height": 13,
+    "weight": 212,
+    "captureRate": 3,
+    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/788.png",
+    "types": [
+      "water",
+      "fairy"
+    ],
+    "power": 570
+  },
+  {
+    "id": 789,
+    "name": "Cosmog",
+    "description": "Cosmog is very curious but not very cautious, often placing itself in danger. If things start to look dicey, it teleports away.",
+    "height": 2,
+    "weight": 1,
+    "captureRate": 45,
+    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/789.png",
+    "types": [
+      "psychic"
+    ],
+    "power": 200
+  },
+  {
+    "id": 790,
+    "name": "Cosmoem",
+    "description": "It sucks in dust from the air at an astounding rate, frantically building up energy within its core as preparation for evolution.",
+    "height": 1,
+    "weight": 9999,
+    "captureRate": 45,
+    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/790.png",
+    "types": [
+      "psychic"
+    ],
+    "power": 400
+  },
+  {
+    "id": 791,
+    "name": "Solgaleo",
+    "description": "Solgaleo was once known as the Beast That Devours the Sun. Energy in the form of light radiates boundlessly from it.",
+    "height": 34,
+    "weight": 2300,
+    "captureRate": 45,
+    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/791.png",
+    "types": [
+      "psychic",
+      "steel"
+    ],
+    "power": 680
+  },
+  {
+    "id": 792,
+    "name": "Lunala",
+    "description": "It steals the light from its surroundings and then becomes the full moon, showering its own light across the night sky.",
+    "height": 40,
+    "weight": 1200,
+    "captureRate": 45,
+    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/792.png",
+    "types": [
+      "psychic",
+      "ghost"
+    ],
+    "power": 680
+  },
+  {
+    "id": 800,
+    "name": "Necrozma",
+    "description": "When Necrozma latches on to Lunala, it becomes vicious, seeing enemies everywhere it looks. It will burn the world with lasers.",
+    "height": 24,
+    "weight": 2300,
+    "captureRate": 255,
+    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/800.png",
+    "types": [
+      "psychic"
+    ],
+    "power": 600
+  },
+  {
+    "id": 888,
+    "name": "Zacian",
+    "description": "This Pokémon has slumbered for many years. Some say it’s Zamazenta’s elder sister—others say the two Pokémon are rivals.",
+    "height": 28,
+    "weight": 1100,
+    "captureRate": 10,
+    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/888.png",
+    "types": [
+      "fairy"
+    ],
+    "power": 670
+  },
+  {
+    "id": 889,
+    "name": "Zamazenta",
+    "description": "This Pokémon slept for aeons while in the form of a statue. It was asleep for so long, people forgot that it ever existed.",
+    "height": 29,
+    "weight": 2100,
+    "captureRate": 10,
+    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/889.png",
+    "types": [
+      "fighting"
+    ],
+    "power": 670
+  },
+  {
+    "id": 890,
+    "name": "Eternatus",
+    "description": "It was inside a meteorite that fell 20,000 years ago. There seems to be a connection between this Pokémon and the Dynamax phenomenon.",
+    "height": 200,
+    "weight": 9500,
+    "captureRate": 255,
+    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/890.png",
+    "types": [
+      "poison",
+      "dragon"
+    ],
+    "power": 690
+  },
+  {
+    "id": 891,
+    "name": "Kubfu",
+    "description": "If Kubfu pulls the long white hair on its head, its fighting spirit heightens and power wells up from the depths of its belly.",
+    "height": 6,
+    "weight": 120,
+    "captureRate": 3,
+    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/891.png",
+    "types": [
+      "fighting"
+    ],
+    "power": 385
+  },
+  {
+    "id": 892,
+    "name": "Urshifu",
+    "description": "This form of Urshifu is a strong believer in defeating foes by raining many blows down on them. Its strikes are nonstop, flowing like a river.",
+    "height": 19,
+    "weight": 1050,
+    "captureRate": 3,
+    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/892.png",
+    "types": [
+      "fighting",
+      "dark"
+    ],
+    "power": 550
+  },
+  {
+    "id": 894,
+    "name": "Regieleki",
+    "description": "Its entire body is made up of a single organ that generates electrical energy. Regieleki is capable of creating all Galar's electricity.",
+    "height": 12,
+    "weight": 1450,
+    "captureRate": 3,
+    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/894.png",
+    "types": [
+      "electric"
+    ],
+    "power": 580
+  },
+  {
+    "id": 895,
+    "name": "Regidrago",
+    "description": "Its body is composed of crystallized dragon energy. Regidrago is said to have the powers of every dragon Pokémon.",
+    "height": 21,
+    "weight": 2000,
+    "captureRate": 3,
+    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/895.png",
+    "types": [
+      "dragon"
+    ],
+    "power": 580
+  },
+  {
+    "id": 896,
+    "name": "Glastrier",
+    "description": "Glastrier has tremendous physical strength, and the mask of ice covering its face is 100 times harder than diamond.",
+    "height": 22,
+    "weight": 8000,
+    "captureRate": 3,
+    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/896.png",
+    "types": [
+      "ice"
+    ],
+    "power": 580
+  },
+  {
+    "id": 897,
+    "name": "Spectrier",
+    "description": "As it dashes through the night, Spectrier absorbs the life-force of sleeping creatures. It craves silence and solitude.",
+    "height": 20,
+    "weight": 445,
+    "captureRate": 3,
+    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/897.png",
+    "types": [
+      "ghost"
+    ],
+    "power": 580
+  },
+  {
+    "id": 898,
+    "name": "Calyrex",
+    "description": "Calyrex is known in legend as a king that ruled over Galar in ancient times. It has the power to cause hearts to mend and plants to spring forth.",
+    "height": 11,
+    "weight": 77,
+    "captureRate": 3,
+    "sprite": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/898.png",
+    "types": [
+      "psychic",
+      "grass"
+    ],
+    "power": 500
+  }
+]
