@@ -13,4 +13,8 @@ public class Legendary extends Pokemon{
     public int getPower() {
         return power;
     }
+    @Override
+    public String getPokemonClass(){
+        return "Legendary";
+    }
 }

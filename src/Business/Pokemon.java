@@ -2,7 +2,7 @@ package Business;
 
 import java.util.ArrayList;
 
-public class Pokemon {
+public class Pokemon implements Comparable<Pokemon> {
     private int id;
     private String name;
     private String description;
@@ -26,7 +26,28 @@ public class Pokemon {
     public String getName() {
         return name;
     }
-    public int getPower(){
+
+    public double getCaptureRate() {
+        return captureRate;
+    }
+    public int getId(){
+        return id;
+    }
+    public String getPokemonClass(){
+        return "Common";
+    }
+    @Override
+    public int compareTo(Pokemon comparestu) {
+        int compareage = ((Pokemon) comparestu).getId();
+        /* For Ascending order*/
+        return this.id - compareage;
+    }
+
+    public int getRarity() {
         return 0;
+    }
+
+    public int getPower() {
+        return 1;
     }
 }

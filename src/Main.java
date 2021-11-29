@@ -11,6 +11,7 @@ public class Main {
         PokeManager pokeManager = new PokeManager(new ReadFiles());
 
         Controller controller = new Controller(menu, pokeManager);
+
         controller.run();
     }
 }

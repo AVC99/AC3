@@ -7,13 +7,12 @@ import Business.Pokemon;
 import Persistance.ReadFiles;
 
 import java.util.ArrayList;
+import java.util.Scanner;
 
 public class Controller {
     private Menu menu;
-    private ArrayList<Pokemon> commonList;
-    private ArrayList<Mythic> mythicList;
-    private ArrayList<Legendary> legendaryList;
     private PokeManager pokeManager;
+
 
     public Controller(Menu menu, PokeManager pokeManager) {
         this.menu = menu;
@@ -31,15 +30,13 @@ public class Controller {
     }
 
     private void runOption(int option) {
-        commonList = new ReadFiles().loadCommon();
-        mythicList=new ReadFiles().loadMythic();
-        legendaryList=new ReadFiles().loadLegendaries();
-
         switch (option) {
             case 1 -> menu.spacing();
-
             case 2 -> menu.spacing();
-            case 3 -> menu.spacing();
+            case 3 -> {
+                int pokemonNum= menu.askForInteger("Which Pokémon? ");
+                pokeManager.capturePokemon(pokemonNum);
+            }
             case 4 -> exitMenu();
             default -> menu.showMessage("Wrong option. Enter a number from 1 to 6, both included");
         }

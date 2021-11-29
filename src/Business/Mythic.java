@@ -13,4 +13,8 @@ public class Mythic extends Pokemon{
     public int getRarity() {
         return rarity;
     }
+    @Override
+    public String getPokemonClass(){
+        return "Mythic";
+    }
 }
