@@ -9,4 +9,8 @@ public class Mythic extends Pokemon{
         super(id, name, description, height, weight, captureRate, sprite, types);
         this.rarity = rarity;
     }
+
+    public int getRarity() {
+        return rarity;
+    }
 }

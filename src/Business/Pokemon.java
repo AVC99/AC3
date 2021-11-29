@@ -22,4 +22,11 @@ public class Pokemon {
         this.sprite = sprite;
         this.types = types;
     }
+
+    public String getName() {
+        return name;
+    }
+    public int getPower(){
+        return 0;
+    }
 }

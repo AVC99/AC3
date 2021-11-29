@@ -9,4 +9,8 @@ public class Legendary extends Pokemon{
         super(id, name, description, height, weight, captureRate, sprite, types);
         this.power = power;
     }
+
+    public int getPower() {
+        return power;
+    }
 }
