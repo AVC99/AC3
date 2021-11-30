@@ -36,10 +36,10 @@ public class Pokemon implements Comparable<Pokemon> {
     public String getPokemonClass(){
         return "Common";
     }
+
     @Override
     public int compareTo(Pokemon comparestu) {
-        int compareage = ((Pokemon) comparestu).getId();
-        /* For Ascending order*/
+        int compareage = comparestu.getId();
         return this.id - compareage;
     }
 
