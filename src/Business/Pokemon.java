@@ -1,6 +1,7 @@
 package Business;
 
 import java.util.ArrayList;
+import java.util.SplittableRandom;
 
 public class Pokemon implements Comparable<Pokemon> {
     private int id;
@@ -38,14 +39,23 @@ public class Pokemon implements Comparable<Pokemon> {
     }
 
     @Override
-    public int compareTo(Pokemon comparestu) {
-        int compareage = comparestu.getId();
+    public int compareTo(Pokemon comparesto) {
+        int compareage = comparesto.getId();
         return this.id - compareage;
     }
 
     public int getRarity() {
         return 0;
     }
+    public boolean capture( int random){
+        boolean captured=false;
+            if (random+1 <= this.getCaptureRate()/1.5){
+                captured=true;
+            }
+        System.out.println();
+        return captured;
+    }
+
 
     public int getPower() {
         return 1;

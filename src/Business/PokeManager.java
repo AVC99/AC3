@@ -3,36 +3,35 @@ package Business;
 import Persistance.ReadFiles;
 import Presentation.Menu;
 
-import javax.swing.*;
-import java.awt.*;
 import java.util.*;
 
 public class PokeManager {
 
     private ArrayList<Pokemon> pokemonList;
     private final int maxNum =101;
-   private Random random=new Random();
-   private String option;
+    private Random random=new Random();
+
    private final String[] failPhrases= {"Gah! It was so close, too! Want to try again?","Aargh! Almost had it! Want to try again?","Aww! It appeared to be caught! Want to try again?" };
 
 
     public PokeManager(ReadFiles readFiles){
         pokemonList=new ArrayList<>();
-        this.pokemonList.addAll(readFiles.loadCommon())  ;
-        this.pokemonList.addAll(readFiles.loadMythic());
-        this.pokemonList.addAll(readFiles.loadLegendaries());
+        pokemonList= readFiles.loadPokemon();
         Collections.sort(pokemonList);
     }
-    public void capturePokemon(int pokemonNum){
+    public boolean capturePokemon(Pokemon pokemonToCapture, int random){
+        boolean captured;
 
-        //random.nextInt(maxNum)+1
-        System.out.println(pokemonList.get(pokemonNum).getPokemonClass());
+        captured=pokemonToCapture.capture(random);
 
-        switch (pokemonList.get(pokemonNum).getPokemonClass()){
-            case "Common"->captureCommon(pokemonList.get(pokemonNum));
-            case "Mythic" ->captureMythic(pokemonList.get(pokemonNum));
-            case "Legendary"->captureLegendary(pokemonList.get(pokemonNum));
+        return captured;
+    }
+    public Pokemon findPokemonById(int id){
+        for(Pokemon p: pokemonList){
+            if(p.getId()==id)return p;
         }
+        System.out.println("The pokemon is not in the pokedex, please try another one.");
+        return null;
     }
     public boolean captureCommon(Pokemon pokemonToCapture){
         do{
@@ -73,7 +72,7 @@ public class PokeManager {
     public String answerTryAgain(){
         String answer;
         Menu menu= new Menu();
-       answer= menu.askForString("Want to try again?[y/n]");
+        answer= menu.askForString("Want to try again?[y/n]");
         if (!answer.equalsIgnoreCase("y") && !answer.equalsIgnoreCase("n")){
 
         }
