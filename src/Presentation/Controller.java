@@ -2,6 +2,7 @@ package Presentation;
 
 import Business.PokeManager;
 import Business.Pokemon;
+import Renderer.HTMLPokemonRender;
 import edu.salleurl.profile.Profileable;
 
 import java.util.Random;
@@ -11,8 +12,7 @@ public class Controller {
     private PokeManager pokeManager;
     private Random random = new Random();
     private final int maxNum =101;
-    private final String[] failPhrases= {"Gah! It was so close, too! Want to try again?","Aargh! Almost had it! Want to try again?","Aww! It appeared to be caught! Want to try again?" };
-
+    private HTMLPokemonRender htmlPokemonRender= new HTMLPokemonRender();
 
     public Controller(Menu menu, PokeManager pokeManager) {
         this.menu = menu;
@@ -34,26 +34,28 @@ public class Controller {
 
     private void runOption(int option) {
         boolean captured, continueCapture;
-        Pokemon pokemonToCapture;
+        Pokemon pokemon;
         switch (option) {
-            case 1 -> menu.spacing();
+            case 1 ->{
+                pokemon=askForPokemon();
+                htmlPokemonRender.render(pokemon.getSprite());
+            }
             case 2 -> menu.spacing();
             case 3 -> {
-                int pokemonid = menu.askForInteger("Which Pokémon? ");
-                pokemonToCapture = pokeManager.findPokemonById(pokemonid);
-                if (pokemonToCapture != null){
-                    menu.showMessage("Attempting to catch " + pokemonToCapture.getName() + " (" + pokemonToCapture.getId() + ")...");
+                pokemon=this.askForPokemon();
+                if (pokemon != null){
+                    menu.showMessage("Attempting to catch " + pokemon.getName() + " (" + pokemon.getId() + ")...");
                     menu.spacing();
                     do {
-                        captured = pokeManager.capturePokemon(pokemonToCapture, generateRandomnum());
+                        captured = pokeManager.capturePokemon(pokemon, generateRandomnum());
                         continueCapture = menu.askForAnswer(random.nextInt(3));
 
                     } while (!captured && continueCapture);
                     menu.spacing();
                     if (!captured) {
-                        menu.showMessage("Coulnd't catch " + pokemonToCapture.getName() + " (" + pokemonToCapture.getId() + ")...");
+                        menu.showMessage("Coulnd't catch " + pokemon.getName() + " (" + pokemon.getId() + ")...");
                     } else
-                        menu.showMessage("Gotcha " +pokemonToCapture.getName() + " (" + pokemonToCapture.getId() + ") was caught!");
+                        menu.showMessage("Gotcha " +pokemon.getName() + " (" + pokemon.getId() + ") was caught!");
                 }else {
                     menu.spacing();
                     menu.showMessage("The Pokemon is not in the Pokedex, please try another one.");
@@ -68,5 +70,8 @@ public class Controller {
     private void exitMenu() {
         menu.spacing();
         menu.showMessage("See you later, Feraligatr!");
+    }
+    private Pokemon askForPokemon(){
+        return pokeManager.findPokemonById(menu.askForInteger("Which Pokémon? "));
     }
 }

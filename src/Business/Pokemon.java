@@ -31,6 +31,9 @@ public class Pokemon implements Comparable<Pokemon> {
     public int getId(){
         return id;
     }
+    public String getSprite(){
+        return sprite;
+    }
 
     @Override
     public int compareTo(Pokemon comparesto) {

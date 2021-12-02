@@ -9,8 +9,8 @@ public class PokeManager {
     private ArrayList<Pokemon> pokemonList;
 
     public PokeManager(PokeDAO pokeDAO){
-        pokemonList=new ArrayList<>();
-        pokemonList= pokeDAO.loadPokemon();
+        this.pokemonList=new ArrayList<>();
+        this.pokemonList= pokeDAO.loadPokemon();
         Collections.sort(pokemonList);
     }
     public boolean capturePokemon(Pokemon pokemonToCapture, int random){
