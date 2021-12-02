@@ -11,7 +11,7 @@ import java.util.ArrayList;
 import java.util.Arrays;
 
 
-public class ReadFiles {
+public class PokeDAO {
     private Gson gson= new Gson();
 
     public ArrayList<Pokemon> loadPokemon() {

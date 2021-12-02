@@ -1,7 +1,6 @@
 package Business;
 
-import Persistance.ReadFiles;
-import Presentation.Menu;
+import Persistance.PokeDAO;
 
 import java.util.*;
 
@@ -9,13 +8,9 @@ public class PokeManager {
 
     private ArrayList<Pokemon> pokemonList;
 
-
-    private final String[] failPhrases= {"Gah! It was so close, too! Want to try again?","Aargh! Almost had it! Want to try again?","Aww! It appeared to be caught! Want to try again?" };
-
-
-    public PokeManager(ReadFiles readFiles){
+    public PokeManager(PokeDAO pokeDAO){
         pokemonList=new ArrayList<>();
-        pokemonList= readFiles.loadPokemon();
+        pokemonList= pokeDAO.loadPokemon();
         Collections.sort(pokemonList);
     }
     public boolean capturePokemon(Pokemon pokemonToCapture, int random){

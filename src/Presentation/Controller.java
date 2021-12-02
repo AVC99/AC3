@@ -1,14 +1,10 @@
 package Presentation;
 
-import Business.Legendary;
-import Business.Mythic;
 import Business.PokeManager;
 import Business.Pokemon;
-import Persistance.ReadFiles;
+import edu.salleurl.profile.Profileable;
 
-import java.util.ArrayList;
 import java.util.Random;
-import java.util.Scanner;
 
 public class Controller {
     private Menu menu;

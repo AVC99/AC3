@@ -1,7 +1,6 @@
 package Business;
 
 import java.util.ArrayList;
-import java.util.SplittableRandom;
 
 public class Pokemon implements Comparable<Pokemon> {
     private int id;
@@ -23,11 +22,9 @@ public class Pokemon implements Comparable<Pokemon> {
         this.sprite = sprite;
         this.types = types;
     }
-
     public String getName() {
         return name;
     }
-
     public double getCaptureRate() {
         return captureRate;
     }
@@ -50,8 +47,6 @@ public class Pokemon implements Comparable<Pokemon> {
         }
         return false;
     }
-
-
     public int getPower() {
         return 1;
     }

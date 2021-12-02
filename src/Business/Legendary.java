@@ -16,7 +16,7 @@ public class Legendary extends Pokemon{
 
     public boolean capture(int random) {
         double div=(1 - ((double)this.getPower() / 1440));
-        double result=(this.getCaptureRate()/1.5) *div ;
+        double result=( this.getCaptureRate()/1.5) *div ;
         if (random + 1 <= result) {
             return true;
         }
