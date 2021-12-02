@@ -2,7 +2,7 @@ package Business;
 
 import java.util.ArrayList;
 
-public class Mythic extends Pokemon{
+public class Mythic extends Pokemon {
     private int rarity;
 
     public Mythic(int id, String name, String description, int height, int weight, double captureRate, String sprite, ArrayList<String> types, int rarity) {
@@ -13,8 +13,15 @@ public class Mythic extends Pokemon{
     public int getRarity() {
         return rarity;
     }
-    @Override
-    public String getPokemonClass(){
-        return "Mythic";
+
+
+
+    public boolean capture(int random) {
+
+        if (random + 1 >= Math.pow(2,this.getCaptureRate()/1.5)*(this.getRarity()/this.getCaptureRate())) {
+            return true;
+        }
+
+        return false;
     }
 }

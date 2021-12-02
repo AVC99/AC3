@@ -8,6 +8,7 @@ import java.util.Scanner;
 public class Menu {
 
     private Scanner scanner;
+    private final String[] failPhrases= {"Gah! It was so close, too!","Aargh! Almost had it!","Aww! It appeared to be caught!" };
 
     public Menu() {
         this.scanner = new Scanner(System.in);
@@ -25,12 +26,21 @@ public class Menu {
     }
 
     public void showMessage(String message) {
-        System.out.println(message);
+        System.out.print(message);
     }
 
     public String askForString(String message) {
         System.out.print(message);
         return scanner.nextLine();
+    }
+    public boolean askForAnswer(int random){
+        String answer;
+        this.showMessage(failPhrases[random]);
+        answer=this.askForString(" Want to try again? [y/n] ");
+        if (!answer.equalsIgnoreCase("y") && !answer.equalsIgnoreCase("n")){
+            this.showMessage("Please enter a correct answer!");
+            return false;
+        }else return answer.equalsIgnoreCase("y");
     }
 
     public int askForInteger(String message) {

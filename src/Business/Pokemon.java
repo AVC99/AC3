@@ -34,26 +34,21 @@ public class Pokemon implements Comparable<Pokemon> {
     public int getId(){
         return id;
     }
-    public String getPokemonClass(){
-        return "Common";
-    }
 
     @Override
     public int compareTo(Pokemon comparesto) {
         int compareage = comparesto.getId();
         return this.id - compareage;
     }
-
     public int getRarity() {
         return 0;
     }
+
     public boolean capture( int random){
-        boolean captured=false;
-            if (random+1 <= this.getCaptureRate()/1.5){
-                captured=true;
-            }
-        System.out.println();
-        return captured;
+        if (random+1 <= this.getCaptureRate()/1.5){
+            return true;
+        }
+        return false;
     }
 
 

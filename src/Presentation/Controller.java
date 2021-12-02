@@ -15,6 +15,7 @@ public class Controller {
     private PokeManager pokeManager;
     private Random random = new Random();
     private final int maxNum =101;
+    private final String[] failPhrases= {"Gah! It was so close, too! Want to try again?","Aargh! Almost had it! Want to try again?","Aww! It appeared to be caught! Want to try again?" };
 
 
     public Controller(Menu menu, PokeManager pokeManager) {
@@ -36,19 +37,35 @@ public class Controller {
     }
 
     private void runOption(int option) {
-        boolean captured=false;
+        boolean captured, continueCapture;
+        Pokemon pokemonToCapture;
         switch (option) {
             case 1 -> menu.spacing();
             case 2 -> menu.spacing();
             case 3 -> {
-                int pokemonid= menu.askForInteger("Which Pokémon? ");
-                do{
-                    caputred= pokeManager.capturePokemon(pokeManager.findPokemonById(pokemonid),generateRandomnum());
-                }while(!captured);
+                int pokemonid = menu.askForInteger("Which Pokémon? ");
+                pokemonToCapture = pokeManager.findPokemonById(pokemonid);
+                if (pokemonToCapture != null){
+                    menu.showMessage("Attempting to catch " + pokemonToCapture.getName() + " (" + pokemonToCapture.getId() + ")...");
+                    menu.spacing();
+                    do {
+                        captured = pokeManager.capturePokemon(pokemonToCapture, generateRandomnum());
+                        continueCapture = menu.askForAnswer(random.nextInt(3));
 
+                    } while (!captured && continueCapture);
+                    menu.spacing();
+                    if (!captured) {
+                        menu.showMessage("Coulnd't catch " + pokemonToCapture.getName() + " (" + pokemonToCapture.getId() + ")...");
+                    } else
+                        menu.showMessage("Gotcha " +pokemonToCapture.getName() + " (" + pokemonToCapture.getId() + ") was caught!");
+                }else {
+                    menu.spacing();
+                    menu.showMessage("The Pokemon is not in the Pokedex, please try another one.");
+                }
+                menu.spacing();
             }
             case 4 -> exitMenu();
-            default -> menu.showMessage("Wrong option. Enter a number from 1 to 6, both included");
+            default -> menu.showMessage("Wrong option. Enter a number from 1 to 4, both included");
         }
     }
 

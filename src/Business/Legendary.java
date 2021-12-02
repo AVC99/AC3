@@ -13,8 +13,13 @@ public class Legendary extends Pokemon{
     public int getPower() {
         return power;
     }
-    @Override
-    public String getPokemonClass(){
-        return "Legendary";
+
+    public boolean capture(int random) {
+        double div=(1 - ((double)this.getPower() / 1440));
+        double result=(this.getCaptureRate()/1.5) *div ;
+        if (random + 1 <= result) {
+            return true;
+        }
+        return false;
     }
 }
