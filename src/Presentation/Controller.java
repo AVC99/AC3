@@ -2,17 +2,17 @@ package Presentation;
 
 import Business.PokeManager;
 import Business.Pokemon;
-import Renderer.HTMLPokemonRender;
-import edu.salleurl.profile.Profileable;
+import edu.salleurl.profile.renderer.ProfileRenderException;
+import edu.salleurl.profile.renderer.ProfileRendererFactory;
 
 import java.util.Random;
 
 public class Controller {
-    private Menu menu;
-    private PokeManager pokeManager;
-    private Random random = new Random();
+    private final Menu menu;
+    private final PokeManager pokeManager;
+    private final Random random = new Random();
     private final int maxNum =101;
-    private HTMLPokemonRender htmlPokemonRender= new HTMLPokemonRender();
+
 
     public Controller(Menu menu, PokeManager pokeManager) {
         this.menu = menu;
@@ -22,7 +22,7 @@ public class Controller {
         return random.nextInt(maxNum)+1;
     }
 
-    public void run() {
+    public void run() throws ProfileRenderException {
         int option;
         do {
             menu.showMenu();
@@ -32,15 +32,19 @@ public class Controller {
         } while (option != 4);
     }
 
-    private void runOption(int option) {
+    private void runOption(int option) throws ProfileRenderException {
         boolean captured, continueCapture;
         Pokemon pokemon;
+
         switch (option) {
             case 1 ->{
                 pokemon=askForPokemon();
-                htmlPokemonRender.render(pokemon.getSprite());
+                ProfileRendererFactory.createSwingProfileRenderer(pokemon.getHeight(),pokemon.getWeight()).render(pokemon);
             }
-            case 2 -> menu.spacing();
+            case 2 ->{
+                pokemon=askForPokemon();
+                ProfileRendererFactory.createHTMLProfileRenderer(pokemon.getPictureUrl()).render(pokemon);
+            }
             case 3 -> {
                 pokemon=this.askForPokemon();
                 if (pokemon != null){

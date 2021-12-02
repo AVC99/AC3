@@ -1,6 +1,8 @@
 package Business;
 
 import java.util.ArrayList;
+import java.util.HashMap;
+import java.util.Map;
 
 public class Mythic extends Pokemon {
     private int rarity;
@@ -23,5 +25,13 @@ public class Mythic extends Pokemon {
         }
 
         return false;
+    }
+    public Map<String, String> getAttributes() {
+        Map<String, String> map= new HashMap<String, String >();
+        map.put("Capture rate",String.valueOf(this.getCaptureRate()));
+        map.put("Height",(double)this.getHeight()/10+" m");
+        map.put("Weight",(double)this.getWeight()/10+" kg");
+        map.put("Rarity",String.valueOf(this.rarity));
+        return map;
     }
 }
