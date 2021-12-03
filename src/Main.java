@@ -13,6 +13,5 @@ public class Main {
 
         Controller controller = new Controller(menu, pokeManager);
         controller.run();
-        System.out.println("Llega aqui");
     }
 }
