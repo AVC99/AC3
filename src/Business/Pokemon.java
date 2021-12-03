@@ -44,7 +44,7 @@ public class Pokemon implements Comparable<Pokemon>, Profileable {
     @Override
     public Map<String, String> getAttributes() {
         Map<String, String> map= new HashMap<String, String >();
-        map.put("Capture rate",(int)this.captureRate+"");
+        map.put("Capture rate",String.valueOf((int)this.captureRate));
         map.put("Height",(double)this.height/10+" m");
         map.put("Weight",(double)this.weight/10+" kg");
         return map;

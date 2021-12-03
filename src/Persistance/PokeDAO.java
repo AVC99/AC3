@@ -18,7 +18,6 @@ public class PokeDAO {
         ArrayList<Pokemon> pokemonList = new ArrayList<>(loadCommon());
         pokemonList.addAll(loadLegendaries());
         pokemonList.addAll(loadMythic());
-
         return pokemonList;
     }
 

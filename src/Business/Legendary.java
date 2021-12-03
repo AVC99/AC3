@@ -24,7 +24,7 @@ public class Legendary extends Pokemon{
         }
         return false;
     }
-
+    @Override
     public Map<String, String> getAttributes() {
         Map<String, String> map= new HashMap<String, String >();
         map.put("Capture rate",String.valueOf(this.getCaptureRate()));

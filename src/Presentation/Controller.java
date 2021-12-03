@@ -39,11 +39,11 @@ public class Controller {
         switch (option) {
             case 1 ->{
                 pokemon=askForPokemon();
-                ProfileRendererFactory.createSwingProfileRenderer(pokemon.getHeight(),pokemon.getWeight()).render(pokemon);
+                ProfileRendererFactory.createSwingProfileRenderer(1920,1080).render(pokemon);
             }
             case 2 ->{
                 pokemon=askForPokemon();
-                ProfileRendererFactory.createHTMLProfileRenderer(pokemon.getPictureUrl()).render(pokemon);
+                ProfileRendererFactory.createHTMLProfileRenderer("Images").render(pokemon);
             }
             case 3 -> {
                 pokemon=this.askForPokemon();
