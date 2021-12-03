@@ -25,7 +25,6 @@ public class PokeDAO {
         ArrayList<Pokemon> pokemons = new ArrayList<>();
         Pokemon[] commons;
         try{
-            //o parsear de Jsonelement a
             commons=gson.fromJson(new FileReader("common.json"), Pokemon[].class);
             pokemons.addAll(Arrays.asList(commons));
         }catch(FileNotFoundException e){
@@ -38,7 +37,6 @@ public class PokeDAO {
         ArrayList<Mythic> mythics = new ArrayList<>();
         Mythic[] mythicsArray;
         try{
-            //o parsear de Jsonelement a
             mythicsArray=gson.fromJson(new FileReader("mythical.json"), Mythic[].class);
             mythics.addAll(Arrays.asList(mythicsArray));
         }catch(FileNotFoundException e){
@@ -51,7 +49,6 @@ public class PokeDAO {
         ArrayList<Legendary> legendaryList = new ArrayList<>();
         Legendary[] legendaries;
         try{
-            //o parsear de Jsonelement a
             legendaries=gson.fromJson(new FileReader("legendary.json"), Legendary[].class);
             legendaryList.addAll(Arrays.asList(legendaries));
         }catch(FileNotFoundException e){
