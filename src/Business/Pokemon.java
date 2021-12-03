@@ -6,14 +6,14 @@ import java.util.HashMap;
 import java.util.Map;
 
 public class Pokemon implements Comparable<Pokemon>, Profileable {
-    private int id;
-    private String name;
-    private String description;
-    private int height;
-    private int weight;
-    private double captureRate;
-    private String sprite;
-    private ArrayList<String> types;
+    private final int id;
+    private final String name;
+    private final String description;
+    private final int height;
+    private final int weight;
+    private final double captureRate;
+    private final String sprite;
+    private final ArrayList<String> types;
 
     public Pokemon(int id, String name, String description, int height, int weight, double captureRate, String sprite, ArrayList<String> types) {
         this.id = id;
