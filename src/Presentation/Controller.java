@@ -13,7 +13,6 @@ public class Controller {
     private final Random random = new Random();
     private Pokemon pokemon;
 
-
     public Controller(Menu menu, PokeManager pokeManager) {
         this.menu = menu;
         this.pokeManager = pokeManager;

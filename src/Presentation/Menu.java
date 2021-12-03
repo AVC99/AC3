@@ -6,7 +6,7 @@ import java.util.Scanner;
 
 public class Menu {
 
-    private Scanner scanner;
+    private final Scanner scanner;
     private final String[] failPhrases= {"Gah! It was so close, too!","Aargh! Almost had it!","Aww! It appeared to be caught!" };
 
     public Menu() {
@@ -35,11 +35,13 @@ public class Menu {
     public boolean askForAnswer(int random){
         String answer;
         this.showMessage(failPhrases[random]);
-        answer=this.askForString(" Want to try again? [y/n] ");
-        if (!answer.equalsIgnoreCase("y") && !answer.equalsIgnoreCase("n")){
-            this.showMessage("Please enter a correct answer!");
-            return false;
-        }else return answer.equalsIgnoreCase("y");
+        do{
+            answer=this.askForString(" Want to try again? [y/n] ");
+            if (!answer.equalsIgnoreCase("y") && !answer.equalsIgnoreCase("n")){
+                this.showMessage("Please enter a correct answer!");
+            }
+        }while (!answer.equalsIgnoreCase("y") && !answer.equalsIgnoreCase("n"));
+        return answer.equalsIgnoreCase("y");
     }
 
     public int askForInteger(String message) {
