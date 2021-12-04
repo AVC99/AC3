@@ -1,7 +1,6 @@
 package Business;
 
 import java.util.ArrayList;
-import java.util.HashMap;
 import java.util.Map;
 
 public class Legendary extends Pokemon{

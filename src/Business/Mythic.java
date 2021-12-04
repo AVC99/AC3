@@ -1,7 +1,6 @@
 package Business;
 
 import java.util.ArrayList;
-import java.util.HashMap;
 import java.util.Map;
 
 public class Mythic extends Pokemon {
@@ -19,11 +18,9 @@ public class Mythic extends Pokemon {
 
 
     public boolean capture(int random) {
-
         if (random + 1 >= Math.pow(2,this.getCaptureRate()/1.5)*(this.getRarity()/this.getCaptureRate())) {
             return true;
         }
-
         return false;
     }
     @Override

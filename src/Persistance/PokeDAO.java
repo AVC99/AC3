@@ -12,7 +12,7 @@ import java.util.Arrays;
 
 
 public class PokeDAO {
-    private Gson gson= new Gson();
+    private final Gson gson= new Gson();
 
     public ArrayList<Pokemon> loadPokemon() {
         ArrayList<Pokemon> pokemonList = new ArrayList<>(loadCommon());

@@ -43,7 +43,7 @@ public class Pokemon implements Comparable<Pokemon>, Profileable {
 
     @Override
     public Map<String, String> getAttributes() {
-        Map<String, String> map= new HashMap<String, String >();
+        Map<String, String> map= new HashMap<>();
         map.put("Capture rate",String.valueOf((int)this.captureRate));
         map.put("Height",(double)this.height/10+" m");
         map.put("Weight",(double)this.weight/10+" kg");
@@ -78,10 +78,6 @@ public class Pokemon implements Comparable<Pokemon>, Profileable {
         return height;
     }
 
-    public int getWeight() {
-        return weight;
-    }
-
     public double getCaptureRate() {
         return captureRate;
     }
@@ -96,10 +92,7 @@ public class Pokemon implements Comparable<Pokemon>, Profileable {
     }
 
     public boolean capture( int random){
-        if (random+1 <= this.getCaptureRate()/1.5){
-            return true;
-        }
-        return false;
+        return random + 1 <= this.getCaptureRate() / 1.5;
     }
     public int getPower() {
         return 1;
